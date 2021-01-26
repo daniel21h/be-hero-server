@@ -7,6 +7,10 @@ const SessionController = require('./controllers/SessionController')
 
 const routes = express.Router()
 
+routes.get('/', (request, response) => {
+  return response.json({ message: '🚀 Server running on Heroku.' })
+})
+
 routes.post('/sessions', SessionController.create)
 
 routes.get('/ongs', OngController.index)

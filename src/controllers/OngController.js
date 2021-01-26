@@ -21,7 +21,7 @@ module.exports = {
         //Conectando no DB e criando ONG junto a connection
         await connection('ongs').insert({
             id,
-            name,
+            name, 
             email,
             whatsapp,
             city,
